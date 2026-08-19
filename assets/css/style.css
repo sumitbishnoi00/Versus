@@ -1005,6 +1005,7 @@ html {
 .row-4 img {
     width: 289px;
     height: 160px;
+    object-fit: cover;
 }
 
 .stay {
@@ -1054,10 +1055,15 @@ html {
     border-radius: 12px;
     outline: none;
     background-color: #000;
-    color: #fff;
+    color: white;
     font-size: 14px;
     font-weight: 400;
     line-height: 114.29%;
+}
+
+.email::placeholder {
+    color: white;
+    opacity: 1;
 }
 
 .button {
@@ -1089,6 +1095,11 @@ html {
 
 .button:hover .svg-1 path {
     stroke: black;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 
@@ -1164,8 +1175,8 @@ html {
     border: none;
     border-radius: 12px;
     outline: none;
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
     font-size: 14px;
     font-weight: 400;
     line-height: 114.29%;
@@ -1184,6 +1195,11 @@ html {
     cursor: pointer;
     transition: background-color 330ms ease;
 }
+
+/* .button-2:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+} */
 
 .button-2 .svg-2 {
     transition: transform 330ms ease;

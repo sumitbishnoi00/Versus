@@ -167,3 +167,206 @@ mainImage.src = newsData[2].image;
 document.getElementById("currentYear").textContent =
     new Date().getFullYear();
 
+
+// 
+
+emailjs.init({
+    publicKey: "wJo3JKkjDqwuvZNbQ",
+});
+
+const emailInput = document.getElementById("email");
+const subscribeBtn = document.getElementById("subscribeBtn");
+
+subscribeBtn.addEventListener("click", function () {
+
+    const email = emailInput.value.trim();
+
+    if (email === "") {
+
+        Swal.fire({
+            icon: "warning",
+            title: "Email Required",
+            text: "Please enter your email address.",
+            confirmButtonText: "Okay",
+        });
+
+        return;
+    }
+
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+
+        Swal.fire({
+            icon: "error",
+            title: "Invalid Email",
+            text: "Please enter a valid email address.",
+            confirmButtonText: "Okay",
+        });
+
+        return;
+    }
+
+    subscribeBtn.disabled = true;
+
+    const templateParams = {
+        email: email,
+    };
+
+    emailjs
+        .send(
+            "service_77m9x8k",
+            "template_efhy5jn",
+            templateParams
+        )
+
+        .then(function (response) {
+
+            console.log("SUCCESS!", response.status, response.text);
+
+            Swal.fire({
+                icon: "success",
+                title: "Subscribed!",
+                text: "Thank you for subscribing.",
+                confirmButtonText: "Done",
+            });
+
+
+            emailInput.value = "";
+
+        })
+
+        .catch(function (error) {
+
+            console.error("EmailJS Error:", error);
+
+            Swal.fire({
+                icon: "error",
+                title: "Something Went Wrong",
+                text: "Unable to subscribe right now. Please try again later.",
+                confirmButtonText: "Try Again",
+            });
+
+        })
+
+        .finally(function () {
+
+            subscribeBtn.disabled = false;
+
+        });
+
+});
+
+
+
+// 
+// 
+// 
+
+// // ================================
+// // EmailJS Initialize
+// // ================================
+
+// emailjs.init({
+//     publicKey: "wJo3JKkjDqwuvZNbQ",
+// });
+
+
+// // ================================
+// // Newsletter Elements
+// // ================================
+
+// const newsletterEmail = document.getElementById("newsletterEmail");
+// const subscribeBtn = document.getElementById("subscribeBtn");
+
+
+// // ================================
+// // Subscribe
+// // ================================
+
+// subscribeBtn.addEventListener("click", function () {
+
+//     const email = newsletterEmail.value.trim();
+
+
+//     // Empty validation
+//     if (email === "") {
+
+//         Swal.fire({
+//             icon: "warning",
+//             title: "Email Required",
+//             text: "Please enter your email address.",
+//             confirmButtonText: "Okay"
+//         });
+
+//         return;
+//     }
+
+
+//     // Email validation
+//     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+//     if (!emailPattern.test(email)) {
+
+//         Swal.fire({
+//             icon: "error",
+//             title: "Invalid Email",
+//             text: "Please enter a valid email address.",
+//             confirmButtonText: "Okay"
+//         });
+
+//         return;
+//     }
+
+
+//     // Disable button
+//     subscribeBtn.disabled = true;
+
+
+//     // EmailJS data
+//     const templateParams = {
+//         email: email
+//     };
+
+
+//     // Send Email
+//     emailjs
+//         .send(
+//             "service_77m9x8k",
+//             "template_efhy5jn",
+//             templateParams
+//         )
+
+//         .then(function () {
+
+//             Swal.fire({
+//                 icon: "success",
+//                 title: "Subscribed!",
+//                 text: "Thank you for subscribing.",
+//                 confirmButtonText: "Done"
+//             });
+
+//             newsletterEmail.value = "";
+
+//         })
+
+//         .catch(function (error) {
+
+//             console.error("EmailJS Error:", error);
+
+//             Swal.fire({
+//                 icon: "error",
+//                 title: "Something Went Wrong",
+//                 text: "Please try again later.",
+//                 confirmButtonText: "Try Again"
+//             });
+
+//         })
+
+//         .finally(function () {
+
+//             subscribeBtn.disabled = false;
+
+//         });
+// });
