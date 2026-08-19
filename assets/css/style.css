@@ -703,7 +703,7 @@ body {
     max-width: 1344px;
     width: 100%;
     margin: 0 auto;
-    padding: 33px 15px;
+    padding: 32px 16px;
     background-color: #0D1012;
 }
 
@@ -996,7 +996,7 @@ body {
     /* .section-2 */
 
     .section-2 {
-        margin-top: 70px;
+        margin-top: 80px;
         padding: 0 20px;
     }
 
@@ -1035,9 +1035,9 @@ body {
     /* .section-3 */
 
     .section-3 {
-        margin-top: 70px;
-        margin-bottom: 70px;
-        padding: 0 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 0 16px;
     }
 
     .container-3 {
@@ -1082,9 +1082,9 @@ body {
     /* .section-4 */
 
     .section-4 {
-        margin-top: 70px;
-        margin-bottom: 50px;
-        padding: 0 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 0 16px;
     }
 
     .container-4 {
@@ -1367,7 +1367,7 @@ body {
 
     .section-4 {
         margin-top: 60px;
-        margin-bottom: 45px;
+        margin-bottom: 60px;
         padding: 0 16px;
     }
 
@@ -1437,7 +1437,7 @@ body {
 
 @media (max-width: 640px) {
     .container {
-        padding: 25px 15px;
+        padding: 40px 16px;
     }
 
     .logo {
@@ -1464,11 +1464,11 @@ body {
 
 @media (max-width: 480px) {
     .section-1 {
-        padding: 45px 0;
+        padding: 40px 0;
     }
 
     .container-1 {
-        padding: 0 12px;
+        padding: 0 16px;
     }
 
     .grind {
@@ -1524,8 +1524,8 @@ body {
     /* .section-2 */
 
     .section-2 {
-        margin-top: 45px;
-        padding: 0 12px;
+        margin-top: 40px;
+        padding: 0 16px;
     }
 
     .container-2 {
@@ -1604,9 +1604,9 @@ body {
     /* .section-3 */
 
     .section-3 {
-        margin-top: 45px;
-        margin-bottom: 45px;
-        padding: 0 12px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 0 16px;
     }
 
     .row-3 {
@@ -1720,9 +1720,9 @@ body {
     /* .section-4 */
 
     .section-4 {
-        margin-top: 45px;
-        margin-bottom: 35px;
-        padding: 0 12px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 0 16px;
     }
 
     .container-4 {
