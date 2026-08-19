@@ -7,10 +7,17 @@ menuIcon.addEventListener('click', () => {
 
 // 
 
-function changeLine(element) {
-    document.querySelector('.active').classList.remove('active');
-    element.classList.add('active');
-}
+const lines = document.querySelectorAll(".small-l, .small-r");
+
+lines.forEach((line) => {
+    line.addEventListener("click", () => {
+        document
+            .querySelector(".small-l-per .active")
+            ?.classList.remove("active");
+
+        line.classList.add("active");
+    });
+});
 
 
 // Game menu
