@@ -1455,13 +1455,11 @@ body {
     }
 
     .list-parent {
+         display: flex;
         flex-wrap: wrap;
         gap: 30px 20px;
     }
 
-    .list-parent .ul {
-        width: calc(50% - 10px);
-    }
 }
 
 @media (max-width: 480px) {
@@ -1785,9 +1783,5 @@ body {
 @media (max-width: 400px) {
     .gmail {
         gap: 5px;
-    }
-
-    .list-parent .ul {
-        width: 100%;
     }
 }
