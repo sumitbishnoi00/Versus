@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/webp/Icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Primary Meta Tags -->
     <title>Versus</title>
@@ -33,6 +35,267 @@
 </head>
 
 <body>
+
+    <header class="header">
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="">
+                    <img class="nav-logo" src="assets/images/webp/WormarkLight.webp" width="124.23" height="16"
+                        alt="logo">
+                </a>
+                <div class="game-svg">
+                    <svg class="svg" width="33" height="20" viewBox="0 0 33 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_645)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.2128 6.93714C19.5481 7.84518 19.7559 8.79438 19.8527 9.75526C20.2822 14.0184 19.7603 15.934 18.4899 15.9979C17.3138 16.0556 15.7095 14.9221 13.8948 12.8818C13.6763 12.6367 13.361 12.496 13.0295 12.496H6.97047C6.63898 12.496 6.32311 12.6367 6.10524 12.8818C4.29052 14.9221 2.68617 16.0556 1.51006 15.9979C0.239691 15.934 -0.281566 14.0184 0.147925 9.75526C0.24531 8.79377 0.453188 7.84518 0.787792 6.93714C1.17483 5.88779 1.66363 5.03381 2.2598 4.38688C3.64815 2.87982 5.96041 2.55605 7.71084 3.63857C7.91435 3.76452 8.09975 3.90582 8.26643 4.0631C8.48305 4.26769 8.76771 4.38688 9.06798 4.38688H10.9339C11.2335 4.38688 11.5188 4.26707 11.7354 4.0631C11.9021 3.90582 12.0875 3.76452 12.291 3.63857C14.0408 2.55543 16.3525 2.87982 17.7408 4.38688C18.337 5.03381 18.8258 5.88779 19.2128 6.93714ZM15.6789 6.11326C15.6789 5.57814 15.2382 5.1444 14.6944 5.1444C14.1507 5.1444 13.71 5.57814 13.71 6.11326C13.71 6.64838 14.1507 7.08213 14.6944 7.08213C15.2382 7.08213 15.6789 6.64838 15.6789 6.11326ZM11.7411 8.05038C11.7411 8.5855 12.1818 9.01924 12.7255 9.01924C13.2692 9.01924 13.71 8.5855 13.71 8.05038C13.71 7.51526 13.2692 7.08151 12.7255 7.08151C12.1818 7.08151 11.7411 7.51526 11.7411 8.05038ZM13.71 9.98811C13.71 10.5232 14.1507 10.957 14.6944 10.957C15.2382 10.957 15.6789 10.5232 15.6789 9.98811C15.6789 9.45299 15.2382 9.01924 14.6944 9.01924C14.1507 9.01924 13.71 9.45299 13.71 9.98811ZM15.6789 8.05038C15.6789 8.5855 16.1196 9.01924 16.6634 9.01924C17.2071 9.01924 17.6478 8.5855 17.6478 8.05038C17.6478 7.51526 17.2071 7.08151 16.6634 7.08151C16.1196 7.08151 15.6789 7.51526 15.6789 8.05038ZM5.5 6C5.22386 6 5 6.22386 5 6.5V8H3.5C3.22386 8 3 8.22386 3 8.5C3 8.77614 3.22386 9 3.5 9H5V10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5V9H7.5C7.77614 9 8 8.77614 8 8.5C8 8.22386 7.77614 8 7.5 8H6V6.5C6 6.22386 5.77614 6 5.5 6Z"
+                                fill="#4D545E" />
+                        </g>
+                        <path
+                            d="M30.7115 11.4539C30.5466 11.6487 30.2534 11.6487 30.0885 11.4539L28.1032 9.10939C27.869 8.83283 28.0591 8.4 28.4147 8.4L32.3853 8.4C32.7409 8.4 32.931 8.83283 32.6968 9.10939L30.7115 11.4539Z"
+                            fill="#4D545E" />
+                        <defs>
+                            <clipPath id="clip0_1_645">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+                <div class="game-per">
+                    <h2 class="nav-heading">GAMES</h2>
+                    <div class="news-par">
+                        <h2 class="nav-news">NEWS</h2>
+                        <button class="news-btn">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="line-nav">
+
+                </div>
+                <button class="nav-login">Log In</button>
+                <button class="nav-signin">Sign Up</button>
+            </div>
+
+            <div class="menu-icon">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="chlng-sec">
+        <div class="chlng-per">
+            <div class="chlng-box">
+                <svg class="chlng-svg" width="214" height="93" viewBox="0 0 214 93" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 52.7071H96" stroke="#D4FF27" />
+                    <g filter="url(#filter0_d_1_512)">
+                        <path d="M103 52.7071L107 56.7071L111 52.7071L107 48.7071L103 52.7071Z" fill="#D4FF27" />
+                    </g>
+                    <g filter="url(#filter1_d_1_512)">
+                        <path d="M118.293 52.7071L107 41.4141L95.707 52.7071L107 64.0001L118.293 52.7071Z"
+                            stroke="#D4FF27" shape-rendering="crispEdges" />
+                    </g>
+                    <g filter="url(#filter2_d_1_512)">
+                        <path d="M83 52.7071L107 28.7071L131 52.7071" stroke="#D4FF27" />
+                    </g>
+                    <path d="M118 52.7071H214" stroke="#D4FF27" />
+                    <defs>
+                        <filter id="filter0_d_1_512" x="75" y="20.7071" width="64" height="64"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="14" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.831373 0 0 0 0 1 0 0 0 0 0.152941 0 0 0 1 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_512" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_512" result="shape" />
+                        </filter>
+                        <filter id="filter1_d_1_512" x="67" y="12.7071" width="80" height="80"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="14" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.831373 0 0 0 0 1 0 0 0 0 0.152941 0 0 0 1 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_512" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_512" result="shape" />
+                        </filter>
+                        <filter id="filter2_d_1_512" x="54.6464" y="0" width="104.707" height="81.0607"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="14" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.831373 0 0 0 0 1 0 0 0 0 0.152941 0 0 0 1 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_512" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_512" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+                <h1 class="chlng-hed animate__animated animate__fadeIn">CHALLENGE INCOMING</h1>
+
+            </div>
+
+            <p class="chlng-para animate__animated animate__flip">PLAY GAMES. WIN PRIZES</p>
+            <!-- button -->
+            <div class="chlng-btn-per">
+                <span>
+                    <svg class="chlng-btn-svg" width="181" height="25" viewBox="0 0 181 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M181 24.5C133.942 24.5 132.5 24.5 132.5 24.5L100 0.5H0" stroke="#D4FF27" />
+                        <path d="M166.5 24.5C119.442 24.5 118 24.5 118 24.5L85.5 0.5H36.5" stroke="#D4FF27" />
+                    </svg>
+                </span>
+
+                <button class="chlng-btn">
+                    compete now
+                </button>
+
+                <span>
+                    <svg class="chlng-btn-svg" width="181" height="25" viewBox="0 0 181 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 24.5C47.0582 24.5 48.5 24.5 48.5 24.5L81 0.5H181" stroke="#D4FF27" />
+                        <path d="M14.5 24.5C61.5582 24.5 63 24.5 63 24.5L95.5 0.5H144.5" stroke="#D4FF27" />
+                    </svg>
+                </span>
+            </div>
+            <div class="small-l-per">
+                <div class="small-l active" onclick="changeLine(this)"></div>
+                <div class="small-r" onclick="changeLine(this)"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="game-slect">
+        <div class="game-container">
+            <div>
+                <img src="assets/images/webp/game-select-top.webp" class="game-img" width="1032" height="151" alt="">
+                <h2 class="game-hed">game select</h2>
+                <p class="game-para">Tactical shooters, battle royales, fighters and more</p>
+            </div>
+
+            <div class="card-sec">
+                <!-- card-1 -->
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="assets/images/webp/valor.webp" width="286" height="304" alt="valorant">
+                    <div class="card-para-per">
+
+                        <img src="assets/images/webp/comming-soon.png" width="150.23" height="88.43" alt="poster"
+                            class="card-icon">
+                        <span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z"
+                                    fill="#151A1F" />
+                                <path
+                                    d="M7.28103 10.4234C7.43861 10.3376 7.53903 10.5109 7.62404 10.6022C13.0938 16.8496 18.5701 23.0924 24.0394 29.3398C24.1518 29.4288 24.0667 29.6189 23.9151 29.5985C21.2963 29.6012 18.677 29.5994 16.0582 29.5994C15.8484 29.6017 15.6475 29.5064 15.5188 29.357C12.8015 26.2576 10.0858 23.1569 7.36852 20.057C7.25319 19.9317 7.19353 19.7697 7.20099 19.6068C7.20099 16.6122 7.20199 13.6172 7.2 10.6226C7.20149 10.5518 7.19851 10.4601 7.28103 10.4234Z"
+                                    fill="white" />
+                                <path
+                                    d="M32.5784 10.4088C32.6903 10.3702 32.8136 10.4647 32.7972 10.5718C32.8011 13.5677 32.7967 16.5636 32.7991 19.5596C32.8066 19.7293 32.7658 19.9049 32.645 20.0384C31.8193 20.9815 30.9926 21.9242 30.1669 22.8668C30.0292 23.0302 29.804 23.1206 29.5788 23.1101C26.9774 23.1078 24.3755 23.1115 21.774 23.1083C21.6204 23.1301 21.5329 22.9408 21.6463 22.8496C25.2539 18.729 28.8644 14.6098 32.474 10.4901C32.5014 10.4547 32.5362 10.4274 32.5784 10.4088Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h2 class="card-para">Valorant</h2>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="assets/images/webp/apex.webp" width="286" height="304" alt="valorant">
+                    <div class="card-para-per">
+
+                        <span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z"
+                                    fill="#FF4747" />
+                                <path
+                                    d="M20 6L34 30.0338L29.8824 33.3488L22.0278 27.9631H26.5849L20 16.3594L13.4361 27.9631H17.944L10.1176 33.3488L6 30.0338L20 6Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                        <div>
+                            <h2 class="card-para">Apex Legends</h2>
+                            <p class="card-para2">7 tournaments</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="assets/images/webp/fortnite.webp" width="286" height="304" alt="valorant">
+                    <div class="card-para-per">
+
+                        <img src="assets/images/webp/comming-soon.png" width="150.23" height="88.43" alt="poster"
+                            class="card-icon">
+                        <span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z"
+                                    fill="#151A1F" />
+                                <path
+                                    d="M7.28103 10.4234C7.43861 10.3376 7.53903 10.5109 7.62404 10.6022C13.0938 16.8496 18.5701 23.0924 24.0394 29.3398C24.1518 29.4288 24.0667 29.6189 23.9151 29.5985C21.2963 29.6012 18.677 29.5994 16.0582 29.5994C15.8484 29.6017 15.6475 29.5064 15.5188 29.357C12.8015 26.2576 10.0858 23.1569 7.36852 20.057C7.25319 19.9317 7.19353 19.7697 7.20099 19.6068C7.20099 16.6122 7.20199 13.6172 7.2 10.6226C7.20149 10.5518 7.19851 10.4601 7.28103 10.4234Z"
+                                    fill="white" />
+                                <path
+                                    d="M32.5784 10.4088C32.6903 10.3702 32.8136 10.4647 32.7972 10.5718C32.8011 13.5677 32.7967 16.5636 32.7991 19.5596C32.8066 19.7293 32.7658 19.9049 32.645 20.0384C31.8193 20.9815 30.9926 21.9242 30.1669 22.8668C30.0292 23.0302 29.804 23.1206 29.5788 23.1101C26.9774 23.1078 24.3755 23.1115 21.774 23.1083C21.6204 23.1301 21.5329 22.9408 21.6463 22.8496C25.2539 18.729 28.8644 14.6098 32.474 10.4901C32.5014 10.4547 32.5362 10.4274 32.5784 10.4088Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h2 class="card-para">Fortnite</h2>
+                    </div>
+                </div>
+
+                <!-- card-4 -->
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="assets/images/webp/rocket.webp" width="286" height="304" alt="valorant">
+                    <div class="card-para-per">
+
+                        <img src="assets/images/webp/comming-soon.png" width="150.23" height="88.43" alt="poster"
+                            class="card-icon">
+                        <span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z"
+                                    fill="#151A1F" />
+                                <path
+                                    d="M7.28103 10.4234C7.43861 10.3376 7.53903 10.5109 7.62404 10.6022C13.0938 16.8496 18.5701 23.0924 24.0394 29.3398C24.1518 29.4288 24.0667 29.6189 23.9151 29.5985C21.2963 29.6012 18.677 29.5994 16.0582 29.5994C15.8484 29.6017 15.6475 29.5064 15.5188 29.357C12.8015 26.2576 10.0858 23.1569 7.36852 20.057C7.25319 19.9317 7.19353 19.7697 7.20099 19.6068C7.20099 16.6122 7.20199 13.6172 7.2 10.6226C7.20149 10.5518 7.19851 10.4601 7.28103 10.4234Z"
+                                    fill="white" />
+                                <path
+                                    d="M32.5784 10.4088C32.6903 10.3702 32.8136 10.4647 32.7972 10.5718C32.8011 13.5677 32.7967 16.5636 32.7991 19.5596C32.8066 19.7293 32.7658 19.9049 32.645 20.0384C31.8193 20.9815 30.9926 21.9242 30.1669 22.8668C30.0292 23.0302 29.804 23.1206 29.5788 23.1101C26.9774 23.1078 24.3755 23.1115 21.774 23.1083C21.6204 23.1301 21.5329 22.9408 21.6463 22.8496C25.2539 18.729 28.8644 14.6098 32.474 10.4901C32.5014 10.4547 32.5362 10.4274 32.5784 10.4088Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h2 class="card-para">Rocket League</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <img class="game-img2" src="assets/images/webp/game-select-bottom.png" width="1048" height="44" alt="">
+            </div>
+        </div>
+    </section>
+
     <section class="section-1">
         <div class="container-1">
             <div class="row-1">
@@ -72,7 +335,8 @@
                         </svg>
 
                     </span>
-                    <h1 class="heading-1"><span class="grind-1">THE GRIND </span>STARTS NOW</h1>
+                    <h1 class="heading-1 animate__animated animate__slideInDown"><span class="grind-1">THE GRIND
+                        </span>STARTS NOW</h1>
 
                     <span class="span-2">
                         <svg width="214" height="93" viewBox="0 0 214 93" fill="none"
@@ -216,7 +480,7 @@
                         </span>
                     </div>
 
-                    <h1 class="heading-2">
+                    <h1 class="heading-2 animate__animated animate__flash">
                         UNLEASH YOUR COMPETITIVE INSTINCT
                     </h1>
 
@@ -303,12 +567,26 @@
     </section>
 
     <section class="section-4">
+        <!-- <span class="stay-svg">
+            <svg width="1440" height="720" viewBox="0 0 1440 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1440" height="720" fill="url(#paint0_linear_1_450)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1_450" x1="34" y1="720" x2="117.423" y2="531.91"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D4FF27" />
+                        <stop offset="0.224595" stop-color="#A0FF27" stop-opacity="0.4" />
+                        <stop offset="1" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </span> -->
+
         <div class="container-4">
             <div class="row-4">
                 <img src="assets/images/webp/Camada.webp" alt="Camada">
 
                 <div class="stay">
-                    <h2 class="heading-4">Stay updated</h2>
+                    <h2 class="heading-4 animate__animated animate__bounce">Stay updated</h2>
                     <p class="para-4">Receive all the news, updates, and exclusive promotions directly in your inbox.
                     </p>
                 </div>
@@ -471,8 +749,13 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 
 </html>
+

@@ -1,3 +1,29 @@
+const menuIcon = document.querySelector('.menu-icon');
+const navRight = document.querySelector('.nav-right');
+
+menuIcon.addEventListener('click', () => {
+    navRight.classList.toggle('active');
+});
+
+// 
+
+function changeLine(element) {
+    document.querySelector('.active').classList.remove('active');
+    element.classList.add('active');
+}
+
+
+// Game menu
+const gameSvg = document.querySelector('.game-svg');
+const gamePer = document.querySelector('.game-per');
+
+gameSvg.addEventListener('click', () => {
+    gamePer.classList.toggle('active');
+});
+
+
+// 
+
 let player = null;
 let playerReady = false;
 
@@ -78,7 +104,7 @@ const mainImage = document.getElementById("mainImage");
 newsList.innerHTML = newsData
     .map(
         (item, index) => `
-            <div class="news-card ${index === 2 ? "active" : ""}" data-index="${index}">
+            <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="${index * 200}" class="news-card ${index === 2 ? "active" : ""}" data-index="${index}">
 
                 <img src="${item.image}" alt="News img">
 
@@ -133,3 +159,4 @@ mainImage.src = newsData[2].image;
 
 document.getElementById("currentYear").textContent =
     new Date().getFullYear();
+
