@@ -915,14 +915,59 @@ body {
         max-width: 500px;
     }
 
-    /* .right-box {
-        max-width: 45%;
-    } */
-
     .img-2 {
         width: 100%;
         height: auto;
         display: block;
+    }
+
+    /* .section-3 */
+
+    .section-3 {
+        padding: 0 24px;
+    }
+
+    .container-3 {
+        padding: 0;
+    }
+
+    .bottom-box {
+        gap: 20px;
+    }
+
+    .news-card img {
+        width: 150px;
+    }
+
+    .news-info {
+        padding: 0 18px;
+    }
+
+    /* .section-4 */
+
+    .section-4 {
+        padding: 0 24px;
+    }
+
+    .container-4 {
+        min-height: 160px;
+    }
+
+    .row-4 img {
+        width: 240px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .stay {
+        max-width: 400px;
+        margin-left: 35px;
+        margin-right: 25px;
+    }
+
+    .gmail {
+        max-width: 400px;
+        margin-right: 25px;
     }
 
 }
@@ -985,6 +1030,109 @@ body {
 
     .para-2 {
         font-size: 15px;
+    }
+
+    /* .section-3 */
+
+    .section-3 {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding: 0 20px;
+    }
+
+    .container-3 {
+        padding: 0;
+    }
+
+    .row-3 {
+        gap: 32px;
+    }
+
+    .top-box {
+        align-items: center;
+    }
+
+    .bottom-box {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .main-card {
+        width: 100%;
+    }
+
+    .main-card > img {
+        height: auto;
+        aspect-ratio: 1376 / 360;
+    }
+
+    .news-list {
+        gap: 16px;
+    }
+
+    .news-card {
+        min-height: 160px;
+    }
+
+    .news-card img {
+        width: 180px;
+        min-height: 160px;
+    }
+
+    /* .section-4 */
+
+    .section-4 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+
+    .container-4 {
+        min-height: auto;
+    }
+
+    .row-4 {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        align-items: center;
+        column-gap: 30px;
+        padding: 0 30px;
+    }
+
+    .row-4 img {
+        width: 190px;
+        height: 130px;
+        object-fit: contain;
+        grid-row: span 2;
+    }
+
+
+    .stay {
+        max-width: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 10px;
+    }
+
+    .heading-4 {
+        font-size: 30px;
+    }
+
+    .para-4 {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .gmail {
+        max-width: 300px;
+        margin-right: 0;
+        gap: 8px;
+    }
+
+    .email {
+        padding: 11px 14px;
+        font-size: 13px;
     }
 }
 
@@ -1106,6 +1254,185 @@ body {
         height: auto;
         display: block;
     }
+
+    /* .section-3 */
+
+    .section-3 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 0 16px;
+    }
+
+    .container-3 {
+        padding: 0;
+    }
+
+    .row-3 {
+        gap: 28px;
+    }
+
+    .top-box {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .news {
+        font-size: 22px;
+        padding-left: 12px;
+    }
+
+    .para-3 {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .btn-3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .bottom-box {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .main-card > img {
+        height: auto;
+        aspect-ratio: 16 / 7;
+        border-radius: 8px;
+    }
+
+    .main-content {
+        padding: 0 18px 20px;
+    }
+
+    .category {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+    .main-content h2 {
+        font-size: 16px;
+        line-height: 125%;
+        margin-top: 14px;
+    }
+
+    .main-content p {
+        font-size: 14px;
+        line-height: 150%;
+        margin-top: 18px;
+    }
+
+    .date {
+        font-size: 13px;
+        margin-top: 18px;
+    }
+
+    .news-list {
+        gap: 16px;
+    }
+
+    .news-card {
+        min-height: 140px;
+    }
+
+    .news-card img {
+        width: 140px;
+        min-height: 140px;
+        height: 140px;
+    }
+
+    .news-info {
+        padding: 16px;
+    }
+
+    .news-info .category {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .news-info h3 {
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+
+    .clock {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 10px;
+    }
+
+    /* .section-4 */
+
+    .section-4 {
+        margin-top: 60px;
+        margin-bottom: 45px;
+        padding: 0 16px;
+    }
+
+    .container-4 {
+        min-height: auto;
+        border-radius: 12px;
+    }
+
+    .row-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 35px 24px;
+        gap: 20px;
+    }
+
+    .row-4 img {
+        width: 180px;
+        height: 110px;
+        object-fit: contain;
+        grid-row: auto;
+    }
+
+    .stay {
+        width: 100%;
+        max-width: 450px;
+        margin: 0;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .heading-4 {
+        font-size: 28px;
+        line-height: 100%;
+    }
+
+    .para-4 {
+        max-width: 400px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .gmail {
+        width: 100%;
+        max-width: 430px;
+        margin: 0;
+        gap: 8px;
+    }
+
+    .email {
+        height: 40px;
+        padding: 11px 14px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    .button {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -1274,6 +1601,183 @@ body {
     .img-2 {
         width: 100%;
         height: auto;
+    }
+
+    /* .section-3 */
+
+    .section-3 {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        padding: 0 12px;
+    }
+
+    .row-3 {
+        gap: 24px;
+    }
+
+    .top-box {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .news {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .para-3 {
+        font-size: 13px;
+        line-height: 145%;
+        margin-top: 10px;
+    }
+
+    .btn-3 {
+        font-size: 13px;
+        gap: 3px;
+    }
+
+    .btn-3 svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .bottom-box {
+        gap: 24px;
+    }
+
+    .main-card > img {
+        aspect-ratio: 16 / 8;
+    }
+
+    .main-content {
+        padding: 0 14px 18px;
+    }
+
+    .category {
+        padding: 6px 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .main-content h2 {
+        font-size: 15px;
+        line-height: 125%;
+        margin-top: 12px;
+    }
+
+    .main-content p {
+        font-size: 13px;
+        line-height: 150%;
+        margin-top: 16px;
+    }
+
+    .date {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 16px;
+    }
+
+    .date svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .news-card {
+        min-height: 120px;
+    }
+
+    .news-card img {
+        width: 110px;
+        min-height: 120px;
+        height: 120px;
+    }
+
+    .news-info {
+        padding: 12px;
+    }
+
+    .news-info .category {
+        padding: 5px 8px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .news-info h3 {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 8px;
+    }
+
+    .clock {
+        font-size: 11px;
+        line-height: 13px;
+        margin-top: 8px;
+    }
+
+    .clock svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* .section-4 */
+
+    .section-4 {
+        margin-top: 45px;
+        margin-bottom: 35px;
+        padding: 0 12px;
+    }
+
+    .container-4 {
+        border-radius: 10px;
+    }
+
+    .row-4 {
+        padding: 28px 16px;
+        gap: 18px;
+    }
+
+    .row-4 img {
+        width: 150px;
+        height: 90px;
+    }
+
+    .stay {
+        max-width: 100%;
+        gap: 8px;
+    }
+
+    .heading-4 {
+        font-size: 24px;
+    }
+
+    .para-4 {
+        max-width: 320px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .gmail {
+        width: 100%;
+        gap: 6px;
+    }
+
+    .email {
+        height: 38px;
+        padding: 10px 12px;
+        font-size: 12px;
+        border-radius: 9px;
+    }
+
+    .button {
+        width: 38px;
+        min-width: 38px;
+        height: 38px;
+        border-radius: 7px;
+    }
+
+    .button .svg-1 {
+        width: 14px;
+        height: 14px;
     }
 
 }
