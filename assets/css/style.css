@@ -1196,10 +1196,6 @@ html {
     transition: background-color 330ms ease;
 }
 
-/* .button-2:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-} */
 
 .button-2 .svg-2 {
     transition: transform 330ms ease;
